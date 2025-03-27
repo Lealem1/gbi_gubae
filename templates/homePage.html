@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='gbi.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="nav-menu">
+        <a href="#about">ስለ ግቢ ጉባኤያችን</a>
+        <a href="#leaders">የመሪዎች መልዕክት</a>
+        <a href="#programs">መርሃ ግብሮቻችን</a>
+        <a href="#holidays">ታላላቅ በዐላት</a>
+        <a href="#locations">ቦታዎች</a>
+        <a href="#churches">ቤተ ክርስቲያናት</a>
+        <a href="#photos">ፎቶዎች</a>
+        <a href="#registration">ለአባልነት ምዝገባ</a>
+        <a href="#contact">ያግኙን</a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo.jpg') }}" alt="ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ">
+            </div>
+            <h1 class="main-title">ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ</h1>
+        </div>
+
+        <section id="home" style="background-image: url('{{ url_for('static', filename='gbii.jpg') }}')">
+            <h1>እንኳን ወደ ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ በደህና መጡ!</h1>
+        </section>
+
+        <section id="about">
+            <h2>ስለ ግቢ ጉባኤያችን</h2>
+            <div class="section-content">
+                <h3>ወደ ግቢ ስትገቡ የተቀበላችሁ ማን ነው?</h3>
+                <p>በመጀመርያ የወልቂጤ ዩኒቨርስቲ በ2004 ዓ/ም ከተመሰረቱ በወቅቱ አዲስ ከሚባለ 9 ዩኒቨርስቲዎች አንዱ ሲሆን ለመጀመርያ ጊዜ በዚሁ ዓመት የተቀበለው የተማሪ ብዛት ከ 600 የማይበልጥ ሲሆን የትምህርት መርሃ ግብሩንም ያከናውን የነበረው ይህ አሁን ያለንበት የጉብሬ ካምፓስ ገና በግንባታ ሊይ ስለነበር በዋናው የወልቂጤ ከተማ ወደ አውቶብስ ተራ በሚወስደው መንገድ 3 ኪ.ሜ ገባ ብሎ አሁን የጋርመንት ምህንድስና ተማሪዎች በሚማሩበት ክላስተርድ በሆነው በወልቂጤ ካምፓስ ነው።</p>
+                
+                <h3>ግቢ ጉባኤውን እንዴት መሰረታችሁት？</h3>
+                <p>የወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ መመስረት ከተማሪዎች መግባት ጋር በተያያዘ ነው። ይኸውም ምንም እንኳን ለሃገሩ እንግዳ ብንሆንም ለቤተክርስቲያናችን ቀድሞም በሰንበት ትምህርት ቤትና በሌሎችም አገልግሎቶች የተሳተፍን ወንድሞችና እህቶች እለት እለት ቤተ ክርስቲያን መሄዳችንን ቀጥለናን።</p>
+            </div>
+        </section>
+
+
+        <section id="leaders">
+            <h2>የመሪዎች መልዕክት</h2>
+            <div class="section-content">
+                <div class="leader-card">
+                    <img src="{{ url_for('static', filename='mesfin.jpg') }}" alt="ዲያቆን መስፍን" class="leader-photo">
+                    <h3>ዲያቆን መስፍን ከፍያለው</h3>
+                    <p class="leader-title">የግቢ ጉባኤው ዋና ሰብሳቢ</p>
+                    <p class="leader-message">እንኳን ወደ ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ በደህና መጡ። የግቢ ጉባኤው በተማሪዎች መካከል መንፈሳዊ እና ማህበራዊ እድገትን ለማረጋገጥ የሚያደርግ እንቅስቃሴ ነው። እኛ እያንዳንዱ ተማሪ በእግዚአብሄር ፍቅር እና በተማሪዎች መካከል ያለው የወንጌል መልዕክት ተስፋ እንዲያደግ እንፈልጋለን።</p>
+                </div>
+
+                <div class="leader-card">
+                    <img src="{{ url_for('static', filename='bini.jpg') }}" alt="ቢኒያም ዳንኤል" class="leader-photo">
+                    <h3>ቢኒያም ዳንኤል</h3>
+                    <p class="leader-title">የግቢ ጉባኤው ምክትል ሰብሳቢ</p>
+                    <p class="leader-message">የግቢ ጉባኤው ተማሪዎችን በእግዚአብሄር ፍቅር እና በወንጌል መልዕክት እንዲያድጉ የሚያደርግ እንቅስቃሴ ነው። እኛ እያንዳንዱ ተማሪ በእግዚአብሄር ፍቅር እና በተማሪዎች መካከል ያለው የወንጌል መልዕክት ተስፋ እንዲያደግ እንፈልጋለን።</p>
+                </div>
+
+                <div class="leader-card">
+                    <img src="{{ url_for('static', filename='haymi.jpg') }}" alt="ሃይማኖት ብካ" class="leader-photo">
+                    <h3>ሃይማኖት ብካ</h3>
+                    <p class="leader-title">የግቢ ጉባኤው ጸሃፊ</p>
+                    <p class="leader-message">የግቢ ጉባኤው ተማሪዎችን በእግዚአብሄር ፍቅር እና በወንጌል መልዕክት እንዲያድጉ የሚያደርግ እንቅስቃሴ ነው። እኛ እያንዳንዱ ተማሪ በእግዚአብሄር ፍቅር እና በተማሪዎች መካከል ያለው የወንጌል መልዕክት ተስፋ እንዲያደግ እንፈልጋለን።</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs">
+            <h2>መርሃ ግብሮቻችን</h2>
+            <div class="section-content">
+                <h3>መሃረነ አብ</h3>
+                <p>የግቢ ጉባኤያችን መርሃ ግብሮች እዚህ ይገኛሉ...</p>
+                 
+                <h3>ተከታታይ ትምህርት (course)</h3>
+                <p>የግቢ ጉባኤያችን መርሃ ግብሮች እዚህ ይገኛሉ...</p>
+
+                <h3>ነድያን ጥየቃ</h3>
+                <p>የግቢ ጉባኤያችን መርሃ ግብሮች እዚህ ይገኛሉ...</p>
+
+                <h3>ጽዋ</h3>
+                <p>የግቢ ጉባኤያችን መርሃ ግብሮች እዚህ ይገኛሉ...</p>
+
+                <h3>የንስሃ አባት ስብሰባ</h3>
+                <p>የግቢ ጉባኤያችን መርሃ ግብሮች እዚህ ይገኛሉ...</p>
+
+                <h3>የክፍላት ስብሰባ</h3>
+                <p>የግቢ ጉባኤያችን መርሃ ግብሮች እዚህ ይገኛሉ...</p>
+                
+            </div>
+        </section>
+
+        <section id="holidays">
+            <h2>ታላላቅ በዐላት</h2>
+            <div class="section-content">
+                <h3>ገና (የጌታችን የኢየሱስ ክርስቶስ የልደት በዐል)</h3>
+                <p>የግቢ ጉባኤያችን መርሃ ግብሮች እዚህ ይገኛሉ...</p>
+               
+                <h3>ጥምቀት (የጌታችን የኢየሱስ ክርስቶስ የጥምቀት በዐል)</h3>
+                <p>የግቢ ጉባኤያችን መርሃ ግብሮች እዚህ ይገኛሉ...</p>
+               
+                <h3>ትንሳኤ (የጌታችን የኢየሱስ ክርስቶስ የትንሳኤ በዐል)</h3>
+                <p>የግቢ ጉባኤያችን መርሃ ግብሮች እዚህ ይገኛሉ...</p>
+
+            </div>
+        </section>
+
+        <section id="locations">
+            <h2>ቦታዎች</h2>
+            <div class="section-content">
+                <p>የግቢ ጉባኤያችን ቦታዎች እዚህ ይገኛሉ...</p>
+                <!-- Add locations content here -->
+            </div>
+        </section>
+
+        <section id="churches">
+            <h2>ቤተ ክርስቲያናት</h2>
+            <div class="section-content">
+                <div class="church-list">
+                    <div class="church-item">
+                        <img src="{{ url_for('static', filename='silase.jpg') }}" alt="ቅድስት ሥላሴ ቤተክርስቲያን" class="church-image">
+                        <h3>ቅድስት ሥላሴ ቤተክርስቲያን</h3>
+                        <p>የቅድስት ሥላሴ ቤተክርስቲያን የተማሪዎች መንፈሳዊ እና ማህበራዊ እድገትን ለማረጋገጥ የሚያደርግ እንቅስቃሴ ነው።</p>
+                        <a href="https://maps.google.com" target="_blank" class="map-link">
+                            <i class="fas fa-map-marker-alt"></i> ቦታ ይፈልጉ
+                        </a>
+                    </div>
+
+                    <div class="church-item">
+                        <img src="{{ url_for('static', filename='mikael.JPG') }}" alt="ቅዱስ ሚካኤል ቤተ ክርስቲያን" class="church-image">
+                        <h3>ቅዱስ ሚካኤል ቤተ ክርስቲያን</h3>
+                        <p>የቅዱስ ሚካኤል ቤተ ክርስቲያን ተማሪዎችን በእግዚአብሄር ፍቅር እና በወንጌል መልዕክት እንዲያድጉ የሚያደርግ እንቅስቃሴ ነው።</p>
+                        <a href="https://maps.google.com" target="_blank" class="map-link">
+                            <i class="fas fa-map-marker-alt"></i> ቦታ ይፈልጉ
+                        </a>
+                    </div>
+
+                    <div class="church-item">
+                        <img src="{{ url_for('static', filename='estifanos.jpg') }}" alt="ቅዱስ እስጢፋኖስ ቤተ ክርስቲያን" class="church-image">
+                        <h3>ቅዱስ እስጢፋኖስ ቤተ ክርስቲያን</h3>
+                        <p>የቅዱስ እስጢፋኖስ ቤተ ክርስቲያን ተማሪዎችን በእግዚአብሄር ፍቅር እና በወንጌል መልዕክት እንዲያድጉ የሚያደርግ እንቅስቃሴ ነው።</p>
+                        <a href="https://maps.google.com" target="_blank" class="map-link">
+                            <i class="fas fa-map-marker-alt"></i> ቦታ ይፈልጉ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="photos">
+            <h2>ፎቶዎች</h2>
+            <div class="section-content">
+                <div class="photo-slider">
+                    <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="photo-container">
+                        <div class="photo-gallery">
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-23.jpg') }}" alt="Photo 1">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-24.jpg') }}" alt="Photo 2">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-26.jpg') }}" alt="Photo 3">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-27.jpg') }}" alt="Photo 4">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-28.jpg') }}" alt="Photo 5">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-31.jpg') }}" alt="Photo 6">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-32.jpg') }}" alt="Photo 7">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-38.jpg') }}" alt="Photo 8">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-40.jpg') }}" alt="Photo 9">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-41.jpg') }}" alt="Photo 10">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-42.jpg') }}" alt="Photo 11">
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-43.jpg') }}" alt="Photo 12">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration">
+            <h2>ለአባልነት ምዝገባ</h2>
+            <div class="section-content">
+                <form action="/register" method="post">
+                    <label for="name">ስም:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">ስልክ ቁጥር:</label>
+                    <input type="text" id="phone" name="phone" required>
+
+                    <label for="department">ደፓርትመንት:</label>
+                    <input type="text" id="department" name="department" required>
+
+                    <label for="batch">ባች:</label>
+                    <input type="text" id="batch" name="batch" required>
+
+                    <input type="submit" value="ምዝገባ">
+                </form>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>ያግኙን</h2>
+            <div class="section-content">
+                <div class="social-links">
+                    <a href="https://t.me/wku_gg_media" target="_blank" class="social-link">
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram</span>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@Wku_gg" target="_blank" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                    
+                    <a href="https://t.me/wkugg_bot" target="_blank" class="social-link">
+                        <i class="fas fa-comments"></i>
+                        <span>ለሃሳብና አስትያይቶ</span>
+                    </a>
+                    
+                    <a href="https://vm.tiktok.com/ZMBhTpDw6/" target="_blank" class="social-link">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                    
+                    <a href="https://t.me/wku_gg_gallerystore" target="_blank" class="social-link">
+                        <i class="fab fa-telegram"></i>
+                        <span>የፎቶ ማኅደራችን</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const gallery = document.querySelector('.photo-gallery');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            let scrollPosition = 0;
+            const scrollAmount = 215; // Width of photo (200px) + gap (15px)
+
+            prevBtn.addEventListener('click', () => {
+                scrollPosition = Math.max(scrollPosition - scrollAmount, 0);
+                gallery.style.transform = `translateX(-${scrollPosition}px)`;
+            });
+
+            nextBtn.addEventListener('click', () => {
+                const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+                scrollPosition = Math.min(scrollPosition + scrollAmount, maxScroll);
+                gallery.style.transform = `translateX(-${scrollPosition}px)`;
+            });
+
+            // Hamburger menu functionality
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close menu when clicking a link
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
