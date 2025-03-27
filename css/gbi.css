@@ -7,7 +7,7 @@ body {
 
 .container {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent white for better readability */
+    background-color: #FFD700;  /* Semi-transparent white for better readability */
     border-radius: 8px; 
     max-width: 1200px; 
     margin: 20px auto; 
@@ -58,6 +58,92 @@ body {
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
+
+/* Photo Gallery Styles */
+.photo-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.photo-gallery {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.photo-item {
+    flex: 0 0 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-item.active {
+    display: flex;
+}
+
+.photo-item img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.slider-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .photo-container {
+        height: 300px;
+    }
+    
+    .photo-item img {
+        max-height: 300px;
+    }
+    
+    .slider-btn {
+        width: 30px;
+        height: 30px;
+    }
+} 
 
 #home {
     background-image: url('../static/gbii.jpg');

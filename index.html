@@ -260,24 +260,35 @@
         </section>
     </div>
     <script>
+        // Photo Slider Functionality
         document.addEventListener('DOMContentLoaded', function() {
-            const gallery = document.querySelector('.photo-gallery');
+            const photoItems = document.querySelectorAll('.photo-item');
             const prevBtn = document.querySelector('.prev-btn');
             const nextBtn = document.querySelector('.next-btn');
-            let scrollPosition = 0;
-            const scrollAmount = 215; // Width of photo (200px) + gap (15px)
-
-            prevBtn.addEventListener('click', () => {
-                scrollPosition = Math.max(scrollPosition - scrollAmount, 0);
-                gallery.style.transform = `translateX(-${scrollPosition}px)`;
-            });
-
-            nextBtn.addEventListener('click', () => {
-                const maxScroll = gallery.scrollWidth - gallery.clientWidth;
-                scrollPosition = Math.min(scrollPosition + scrollAmount, maxScroll);
-                gallery.style.transform = `translateX(-${scrollPosition}px)`;
-            });
-
+            let currentIndex = 0;
+    
+            function showPhoto(index) {
+                photoItems.forEach(item => item.classList.remove('active'));
+                photoItems[index].classList.add('active');
+            }
+    
+            function nextPhoto() {
+                currentIndex = (currentIndex + 1) % photoItems.length;
+                showPhoto(currentIndex);
+            }
+    
+            function prevPhoto() {
+                currentIndex = (currentIndex - 1 + photoItems.length) % photoItems.length;
+                showPhoto(currentIndex);
+            }
+    
+            // Add event listeners
+            nextBtn.addEventListener('click', nextPhoto);
+            prevBtn.addEventListener('click', prevPhoto);
+    
+            // Auto advance photos every 5 seconds
+            setInterval(nextPhoto, 5000);
+            
             // Hamburger menu functionality
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.querySelector('.nav-menu');
