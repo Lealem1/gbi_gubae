@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='gbi.css') }}">
+    <link rel="stylesheet" href="css/gbi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -28,12 +28,12 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <img src="{{ url_for('static', filename='logo.jpg') }}" alt="ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ">
+                <img src="css/logo.jpg" alt="ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ">
             </div>
             <h1 class="main-title">ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ</h1>
         </div>
 
-        <section id="home" style="background-image: url('{{ url_for('static', filename='gbii.jpg') }}')">
+        <section id="home" style="background-image: url(css/gbii.jpg)">
             <h1>እንኳን ወደ ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ በደህና መጡ!</h1>
         </section>
 
@@ -53,21 +53,21 @@
             <h2>የመሪዎች መልዕክት</h2>
             <div class="section-content">
                 <div class="leader-card">
-                    <img src="{{ url_for('static', filename='mesfin.jpg') }}" alt="ዲያቆን መስፍን" class="leader-photo">
+                    <img src="css/mesfin.jpg" alt="ዲያቆን መስፍን" class="leader-photo">
                     <h3>ዲያቆን መስፍን ከፍያለው</h3>
                     <p class="leader-title">የግቢ ጉባኤው ዋና ሰብሳቢ</p>
                     <p class="leader-message">እንኳን ወደ ወልቂጤ ዩኒቨርስቲ ግቢ ጉባኤ በደህና መጡ። የግቢ ጉባኤው በተማሪዎች መካከል መንፈሳዊ እና ማህበራዊ እድገትን ለማረጋገጥ የሚያደርግ እንቅስቃሴ ነው። እኛ እያንዳንዱ ተማሪ በእግዚአብሄር ፍቅር እና በተማሪዎች መካከል ያለው የወንጌል መልዕክት ተስፋ እንዲያደግ እንፈልጋለን።</p>
                 </div>
 
                 <div class="leader-card">
-                    <img src="{{ url_for('static', filename='bini.jpg') }}" alt="ቢኒያም ዳንኤል" class="leader-photo">
+                    <img src="css/bini.jpg" alt="ቢኒያም ዳንኤል" class="leader-photo">
                     <h3>ቢኒያም ዳንኤል</h3>
                     <p class="leader-title">የግቢ ጉባኤው ምክትል ሰብሳቢ</p>
                     <p class="leader-message">የግቢ ጉባኤው ተማሪዎችን በእግዚአብሄር ፍቅር እና በወንጌል መልዕክት እንዲያድጉ የሚያደርግ እንቅስቃሴ ነው። እኛ እያንዳንዱ ተማሪ በእግዚአብሄር ፍቅር እና በተማሪዎች መካከል ያለው የወንጌል መልዕክት ተስፋ እንዲያደግ እንፈልጋለን።</p>
                 </div>
 
                 <div class="leader-card">
-                    <img src="{{ url_for('static', filename='haymi.jpg') }}" alt="ሃይማኖት ብካ" class="leader-photo">
+                    <img src="css/haymi.jpg" alt="ሃይማኖት ብካ" class="leader-photo">
                     <h3>ሃይማኖት ብካ</h3>
                     <p class="leader-title">የግቢ ጉባኤው ጸሃፊ</p>
                     <p class="leader-message">የግቢ ጉባኤው ተማሪዎችን በእግዚአብሄር ፍቅር እና በወንጌል መልዕክት እንዲያድጉ የሚያደርግ እንቅስቃሴ ነው። እኛ እያንዳንዱ ተማሪ በእግዚአብሄር ፍቅር እና በተማሪዎች መካከል ያለው የወንጌል መልዕክት ተስፋ እንዲያደግ እንፈልጋለን።</p>
@@ -127,7 +127,7 @@
             <div class="section-content">
                 <div class="church-list">
                     <div class="church-item">
-                        <img src="{{ url_for('static', filename='silase.jpg') }}" alt="ቅድስት ሥላሴ ቤተክርስቲያን" class="church-image">
+                        <img src="css/silase.jpg" alt="ቅድስት ሥላሴ ቤተክርስቲያን" class="church-image">
                         <h3>ቅድስት ሥላሴ ቤተክርስቲያን</h3>
                         <p>የቅድስት ሥላሴ ቤተክርስቲያን የተማሪዎች መንፈሳዊ እና ማህበራዊ እድገትን ለማረጋገጥ የሚያደርግ እንቅስቃሴ ነው።</p>
                         <a href="https://maps.google.com" target="_blank" class="map-link">
@@ -136,7 +136,7 @@
                     </div>
 
                     <div class="church-item">
-                        <img src="{{ url_for('static', filename='mikael.JPG') }}" alt="ቅዱስ ሚካኤል ቤተ ክርስቲያን" class="church-image">
+                        <img src="css/mikael.JPG" alt="ቅዱስ ሚካኤል ቤተ ክርስቲያን" class="church-image">
                         <h3>ቅዱስ ሚካኤል ቤተ ክርስቲያን</h3>
                         <p>የቅዱስ ሚካኤል ቤተ ክርስቲያን ተማሪዎችን በእግዚአብሄር ፍቅር እና በወንጌል መልዕክት እንዲያድጉ የሚያደርግ እንቅስቃሴ ነው።</p>
                         <a href="https://maps.google.com" target="_blank" class="map-link">
@@ -145,7 +145,7 @@
                     </div>
 
                     <div class="church-item">
-                        <img src="{{ url_for('static', filename='estifanos.jpg') }}" alt="ቅዱስ እስጢፋኖስ ቤተ ክርስቲያን" class="church-image">
+                        <img src="css/estifanos.jpg" alt="ቅዱስ እስጢፋኖስ ቤተ ክርስቲያን" class="church-image">
                         <h3>ቅዱስ እስጢፋኖስ ቤተ ክርስቲያን</h3>
                         <p>የቅዱስ እስጢፋኖስ ቤተ ክርስቲያን ተማሪዎችን በእግዚአብሄር ፍቅር እና በወንጌል መልዕክት እንዲያድጉ የሚያደርግ እንቅስቃሴ ነው።</p>
                         <a href="https://maps.google.com" target="_blank" class="map-link">
@@ -164,40 +164,40 @@
                     <div class="photo-container">
                         <div class="photo-gallery">
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-23.jpg') }}" alt="Photo 1">
+                                <img src="css/photo_2025-03-26_12-06-23.jpg" alt="Photo 1">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-24.jpg') }}" alt="Photo 2">
+                                <img src="css/photo_2025-03-26_12-06-24.jpg" alt="Photo 2">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-26.jpg') }}" alt="Photo 3">
+                                <img src="css/photo_2025-03-26_12-06-26.jpg" alt="Photo 3">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-27.jpg') }}" alt="Photo 4">
+                                <img src="css/photo_2025-03-26_12-06-27.jpg" alt="Photo 4">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-28.jpg') }}" alt="Photo 5">
+                                <img src="css/photo_2025-03-26_12-06-28.jpg" alt="Photo 5">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-31.jpg') }}" alt="Photo 6">
+                                <img src="css/photo_2025-03-26_12-06-31.jpg" alt="Photo 6">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-32.jpg') }}" alt="Photo 7">
+                                <img src="css/photo_2025-03-26_12-06-32.jpg" alt="Photo 7">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-38.jpg') }}" alt="Photo 8">
+                                <img src="css/photo_2025-03-26_12-06-38.jpg" alt="Photo 8">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-40.jpg') }}" alt="Photo 9">
+                                <img src="css/photo_2025-03-26_12-06-40.jpg" alt="Photo 9">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-41.jpg') }}" alt="Photo 10">
+                                <img src="css/photo_2025-03-26_12-06-41.jpg" alt="Photo 10">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-42.jpg') }}" alt="Photo 11">
+                                <img src="css/photo_2025-03-26_12-06-42.jpg" alt="Photo 11">
                             </div>
                             <div class="photo-item">
-                                <img src="{{ url_for('static', filename='photo_2025-03-26_12-06-43.jpg') }}" alt="Photo 12">
+                                <img src="css/photo_2025-03-26_12-06-43.jpg" alt="Photo 12">
                             </div>
                         </div>
                     </div>
